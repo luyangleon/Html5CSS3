@@ -1,0 +1,92 @@
+/* 基础设置 */
+.container{
+    width: 1190px;
+    margin: 0 auto;
+}
+/* #region顶部导航栏start */
+.topbar{
+    height: 30px;
+    background-color: #ECECEC;
+}
+.welcome{
+    font-size: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.welcome span,.welcome a{
+    font-size: 12px;
+    color: #666;
+}
+.welcome .hello{
+    margin-right: 28px;
+}
+.welcome .login{
+    padding-right: 10px;
+    border-right: 1px solid #666;
+}
+.welcome .register{
+    padding-left: 10px;
+}
+.topbar .list{
+    height: 30px;
+    line-height: 30px;
+}
+.topbar .list li{
+    float: left;
+}
+.topbar .list li a{
+    padding: 0 15px;
+    border-right: 1px solid #666;
+}
+.topbar .list li:first-child a{
+    padding-left: 0;
+}
+.topbar .list li:last-child a{
+    padding-right: 0;
+    border: 0;
+}
+/* #region直接通过a标签实现 */
+/* .topbar-nav{
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+}
+.topbar-nav a{
+    font-size: 12px;
+    padding: 0 15px;
+    border-right: 1px solid #666;
+}
+.topbar-nav a:first-child{
+    padding-left: 0;
+}
+.topbar-nav a:last-child{
+    padding-right: 0;
+    border: 0;
+} */
+/* #endregion */
+/* #endregion 顶部导航栏end */
+
+/* #region 头部start */
+.header {
+    height: 120px;
+    background-color: skyblue;
+}
+.header .search form {
+    font-size: 0;
+    margin-top: 42px;
+}
+.header .search input {
+    width: 508px;
+    height: 34px;
+    border: 1px solid #DD302D;
+}
+.header .search button {
+    width: 80px;
+    height: 36px;
+    background-color: #DD302D;
+    vertical-align: top;
+    background-image: url('../images/serch_icon.png');
+    background-repeat: no-repeat;
+    background-position: 28px 6px;
+}
+/* #endregion 头部end */
