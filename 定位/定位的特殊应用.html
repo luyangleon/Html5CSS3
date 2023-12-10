@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer1{
+            height: 200px;
+            background-color: gray;
+            position: relative;
+        }
+        .inner1{
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .outer2{
+            height: 300px;
+            background-color: gray;
+            position: relative;
+        }
+        .inner2{
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 200px; /*设置宽高*/
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer1">
+        <div class="inner1">inner1</div>
+    </div>
+    <hr>
+    <div class="outer2">
+        <div class="inner2">inner2</div>
+    </div>
+</body>
+</html>

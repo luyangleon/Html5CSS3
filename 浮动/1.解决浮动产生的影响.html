@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+        方法1：给父元素指定高度
+        方法2：给父元素设置浮动，带来其他影响
+        方法3：给父元素设置overflow:hidden
+        方法4：在所有浮动元素的最后面，添加一个块级元素，并给该块级元素设置clear:both
+        方法5：给浮动元素的父元素，设置伪元素，通过为元素清除浮动，原理同4，推荐使用
+        .parent::after{
+            content:'',
+            display:block,
+            clear:both
+        }
+         */
+        .outer{
+            width: 500px;
+            background-color: gray;
+            /* overflow: hidden; */
+            /* border: 1px solid black; */
+        }
+        .outer::after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box1,
+        .box2,
+        .box3{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+    <div style="background-color: orange;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe sunt similique nulla ipsam, distinctio aut, hic illo, culpa animi illum doloribus ut? Beatae optio obcaecati atque, saepe vitae illo numquam possimus hic molestias amet doloribus reiciendis repudiandae mollitia rerum accusantium sapiente aliquid eveniet ipsum tempore! Quia voluptas accusantium quibusdam dolorem id aspernatur quod necessitatibus officia delectus sint ipsam dolores, perferendis aperiam culpa totam qui, repellat tempora? Odio minima illum mollitia, fugit quod iusto dolore minus temporibus soluta esse corrupti placeat quibusdam nam, voluptas velit voluptate repudiandae ratione repellat architecto natus ab inventore nihil dolores omnis! Deleniti ipsa qui accusamus exercitationem earum ducimus minima eius, recusandae repellendus, cupiditate voluptate eos labore ex tenetur placeat iure commodi sunt repellat dignissimos vero quis laborum hic! Architecto similique nulla ullam vel tenetur iure optio cumque inventore debitis distinctio, eligendi soluta, ducimus esse numquam. Velit omnis aliquam doloribus neque totam aspernatur quos facere quae animi delectus reiciendis deserunt provident earum est rerum cum, pariatur deleniti officiis alias eum? Quibusdam sint provident velit nam voluptatem distinctio deleniti, deserunt iste quod harum consequuntur repellendus accusamus rem aliquam cum libero adipisci ut! Fugiat minima dolor similique alias natus quasi, ipsum, iste laborum aliquid ducimus saepe praesentium aperiam, expedita nostrum rerum commodi omnis asperiores non. Autem a placeat fugit nemo dolorem unde aliquid ipsum sed, nobis quos, tempore perferendis itaque vitae incidunt excepturi nesciunt, voluptas cum repudiandae corporis? Dolores magni, praesentium cupiditate labore ullam doloremque, dolore harum aspernatur explicabo delectus veritatis facilis nulla, asperiores quasi neque eum? Incidunt facere ipsa voluptatem aut aliquid quibusdam doloribus, odio repudiandae expedita eius facilis. Tempora alias vel sapiente, aperiam rerum eaque recusandae quasi maiores provident dicta odio eos quis praesentium ex maxime suscipit dolorem doloremque error, quam quibusdam sit qui! Laudantium inventore vitae explicabo maxime harum nam perferendis expedita, suscipit odio consequatur molestias aperiam modi obcaecati corporis id! Dolor, ex a rem iusto quod vero explicabo excepturi doloribus perferendis impedit accusamus blanditiis rerum temporibus sequi ipsa labore dolorem nihil eos! Praesentium at debitis cum voluptatibus sunt quia odit ducimus consectetur, modi voluptas placeat ipsum fuga perspiciatis a. A amet sapiente eum nesciunt vitae beatae dolorum. Eveniet culpa nostrum dolores cum sed laboriosam rerum molestias distinctio repellendus saepe. Animi perspiciatis recusandae pariatur rem illo repellendus ipsum culpa. Repellat sunt assumenda alias officiis cum odio ratione facere dolore ea? Quis, aperiam assumenda minus quae doloremque possimus voluptatum unde quam sapiente. Magni maiores libero, id in necessitatibus tempora soluta quaerat rem architecto aspernatur quam corrupti mollitia praesentium porro earum eum voluptates esse maxime quis, vel voluptate distinctio, animi quae. Obcaecati excepturi nisi consectetur, deserunt minima modi. Maiores alias earum corporis explicabo, consequatur dolor modi voluptatibus assumenda ad vel sed repellat dolores aliquam rerum eaque, excepturi quia? Aperiam quod nobis incidunt odio minus obcaecati nam ex et consequatur? Non sint pariatur magni ex reiciendis illum explicabo ullam cupiditate unde, porro quod aliquam cum! Quos voluptates nemo ex quis corporis dicta culpa temporibus, numquam quod laudantium deserunt pariatur officiis facilis nisi esse in harum quidem labore minus?</div>
+</body>
+</html>
