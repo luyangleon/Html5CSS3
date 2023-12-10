@@ -179,22 +179,128 @@
     padding: 0 10px;
     border-left: 1px solid #666;
 }
-
-
-
-
-
-
 .main-content .banner {
     width: 690px;
     height: 458px;
     margin: 0 10px;
     background-color: orange;
 }
+
 .main-content .slide-other {
     width: 290px;
     height: 458px;
-    background-color: green;
+    /* background-color: green; */
+}
+.slide-other .message {
+    width: 260px;
+    height: 156px;
+    border: 1px solid #D9D9D9;
+    padding: 0 14px;
+}
+.slide-other .message .title {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.slide-other .message .title span {
+    font-size: 14px;
+}
+.slide-other .message .title a {
+    font-size: 12px;
+}
+.slide-other .msglist li {
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+
+.slide-other .other-nav {
+    margin-top: 10px;
+    width: 290px;
+    height: 290px;
+    background-color: gray;
+    overflow: hidden;
+}
+.other-nav-list:first-child {
+    margin-top: 16px;
+}
+.other-nav-list:nth-child(2) {
+    margin: 17px 0;
+}
+.other-nav-list li {
+    width: 48px;
+    height: 70px;
+    background-color: skyblue;
+    float: left;
+    margin: 0 11px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.other-nav-list li:first-child {
+    margin-left: 16px;
+}
+
+.other-nav-list .picture {
+    width: 48px;
+    height: 48px;
+    background-image: url('../images/精灵图-侧边功能.png');
+}
+.other-nav-list:nth-child(1) li:nth-child(1) .picture {
+    background-position: 0 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(2) .picture {
+    background-position: -48px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(3) .picture {
+    background-position: -96px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(4) .picture {
+    background-position: -144px 0;
+}
+
+.other-nav-list:nth-child(2) li:nth-child(1) .picture {
+    background-position: 0 -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(2) .picture {
+    background-position: -48px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(3) .picture {
+    background-position: -96px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(4) .picture {
+    background-position: -144px -48px;
+}
+
+.other-nav-list:nth-child(3) li:nth-child(1) .picture {
+    background-position: 0 -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(2) .picture {
+    background-position: -48px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(3) .picture {
+    background-position: -96px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(4) .picture {
+    background-position: -144px -96px;
 }
 
 /* #endregion 主内容区 end */
+
+/* #region 秒杀专场 start */
+.seckill {
+    margin-top: 10px;
+}
+.seckill img {
+    float: left;
+    margin-right: 11px;
+    cursor: pointer;
+}
+.seckill img:last-child {
+    margin-right: 0;
+}
+
+/* #endregion 秒杀专场 end */
+
